@@ -1,0 +1,20 @@
+{% extends 'project/base.html' %}
+{% load staticfiles %}
+
+
+{% block title %} Feed {% endblock %}
+
+{% block head %}
+  <link href="{% static 'project/css/feeds.css' %}" rel="stylesheet">
+
+  <script src="{% static 'project/js/feeds.js' %}"></script>
+{% endblock head %}
+
+{% block main %}
+  <div class="page-header">
+    <h1>Feed</h1>
+  </div>
+  <ul class="stream">
+    {% include 'project/partial_feed.html' with feed=feed %}
+  </ul>
+{% endblock main %}

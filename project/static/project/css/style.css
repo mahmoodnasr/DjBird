@@ -1,0 +1,395 @@
+h4,
+h5,
+h6,
+h1,
+h2,
+h3 {
+    margin-top: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+}
+
+body a {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+.header {
+    padding: 2em 0;
+    border-bottom: 1px solid #6f879a;
+}
+
+.logo a,
+.logo a:hover{
+    display: block;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bolder;
+    color: #f0f0f0;
+}
+.logo img {
+    max-width: 100px;
+    max-height: 100px;
+}
+.logo {
+
+}
+
+.logo {
+    margin: 0;
+    float: left;
+    font-size: 3em;
+    font-weight: 200;
+    font-family: "Audiowide", cursive;
+    color: #336699;
+    text-align: center;
+    text-shadow: 1px 1px 0 #333333;
+    line-height: 70px;
+}
+
+.head-nav ul li {
+    display: inline-block;
+}
+
+.head-nav ul li a {
+    position: relative;
+    display: inline-block;
+    outline: none;
+    color: #8ca9b9;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    font-size: 1em;
+    margin: 0.8em 1.3em;
+}
+
+.head-nav a:hover,
+.head-nav a:focus {
+    outline: none;
+	text-decoration:none;
+}
+
+.head-nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.head-nav ul li {
+    display: inline-block;
+    margin: 0 .5em;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.head-nav ul li a:hover,
+.head-nav ul li.active a {
+    color: #fff;
+}
+
+ul a:hover,
+ul a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+.cl-effect-15 a::before {
+    color: #8ca9b9;
+    content: attr(data-hover);
+    position: absolute;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.cl-effect-15 a:hover::before,
+.cl-effect-15 a:focus::before {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0;
+}
+
+.head-nav {
+    padding: 1em 0;
+}
+
+.header-right ul li {
+    display: inline-block;
+    float: left;
+}
+
+.header-right {
+    float: right;
+    margin: 2.1em 0;
+}
+
+.header-right ul {
+    padding: 0;
+}
+
+.header-right li {
+    margin: 0 0.5em;
+}
+
+
+.banner {
+    background: #556a7f;
+}
+
+.content {
+    background: #f5f6f7;
+    padding: 3em 0;
+}
+
+.content h2 {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #556a7f;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 1.4em;
+    margin: 0;
+}
+
+.content p {
+    color: #868f98;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.8em;
+    text-align: left;
+    padding: 1em 0;
+}
+
+.footer {
+    background: #e7eaec;
+    padding: 4em 0;
+    text-align: center;
+}
+
+
+/* Self Clearing Goodness */
+
+.container:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.row:after,
+.clearfix:after {
+    clear: both;
+}
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+/*-- Notifications --*/
+ul.all-notifications {
+  padding: 0;
+  margin-top: 1em;
+}
+
+ul.all-notifications li {
+  list-style: none;
+  border-bottom: 1px solid #eeeeee;
+  padding: .8em 0;
+}
+
+ul.all-notifications li:last-child {
+  border-bottom: none;
+}
+
+ul.all-notifications li small {
+  color: #cccccc;
+  font-size: .8em;
+}
+
+ul.all-notifications li p {
+  margin: 0;
+}
+
+ul.all-notifications li div {
+  margin-left: 40px;
+  padding-left: 1em;
+}
+
+ul.all-notifications .user-picture {
+  width: 40px;
+  float: left;
+}
+/*-- Network --*/
+.panel-heading a:hover{
+    text-decoration: none;
+}
+/*-- responsive-mediaquries --*/
+
+@media(max-width:1024px) {
+    .footer h6 {
+        font-size: 0.875em;
+    }
+    .footer {
+        padding: 2em 0;
+    }
+    .footer p {
+        font-size: 0.85em;
+    }
+    .content {
+        padding: 2em 0;
+    }
+}
+
+
+/*-- responsive-mediaquries --*/
+
+@media(max-width:768px) {
+    .head-nav ul li {
+        display: block;
+        float: none;
+    }
+    .head-nav ul li a {
+        border-right: none;
+        color: #fff;
+    }
+    .head-nav ul {
+        position: absolute;
+        margin: 0;
+        padding: 2% 0;
+        z-index: 999;
+        width: 100%;
+        display: none;
+        text-align: center;
+        background: #556A7F;
+        left: 0;
+        top: 9em;
+    }
+    .head-nav span.menu {
+        display: block;
+        background: none;
+        position: absolute;
+        top: 3.8em;
+        right: 2em;
+    }
+    .head-nav span.menu:before {
+        content: url(../img/menu.png);
+        color: #FFF;
+        font-size: 1.3em;
+        text-transform: uppercase;
+        text-align: right;
+        cursor: pointer;
+    }
+    .head-nav ul li a {
+        font-size: 1.1em;
+        padding: 0.5em 1.5em;
+        display: block;
+    }
+    .head-nav ul li a:hover {
+        background: none;
+        color: #fff;
+    }
+    .head-nav ul li a {
+        font-size: 0.875em;
+        margin: 0.8em 1.3em;
+    }
+    .header-right {
+        display: none;
+    }
+}
+
+
+/*-- responsive-mediaquries --*/
+
+@media(max-width:480px) {
+    .footer {
+        padding: 1em 0;
+    }
+    .logo {
+        width: 60%;
+    }
+    .head-nav span.menu {
+        top: 2.5em;
+        right: 2em;
+    }
+    .head-nav ul {
+        top: 6em;
+    }
+}
+
+
+/*-- responsive-mediaquries --*/
+
+@media(max-width:320px) {
+    .head-nav span.menu {
+        top: 2.1em;
+        right: 1.5em;
+    }
+    .head-nav ul {
+        top: 5em;
+    }
+    .footer p {
+        font-size: 0.8125em;
+    }
+
+    .content p {
+        text-align: center;
+        padding: 0.5em 0;
+    }
+    .head-nav ul li a {
+        padding: 0;
+    }
+    .logo {
+        width: 50%;
+    }
+    strong {
+        font-weight: bold;
+        font-size: 0.9em;
+    }
+}

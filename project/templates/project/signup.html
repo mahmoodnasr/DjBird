@@ -1,0 +1,41 @@
+{% extends 'project/base.html' %}
+
+{% load staticfiles %}
+
+{% block head %}
+  <link href="{% static 'project/css/signup.css' %}" rel="stylesheet">
+{% endblock head %}
+
+{% block body %}
+    <div class="cover">
+        <div class="row">
+        <h1 class="logo"><a href="{% url 'home' %}"><img class="brand" src="{% static 'project/img/favicon.png' %}" > DjBird</a></h1>
+        </div>
+        <div class="row">
+            <div class="signup">
+        <h2>Sign up for DjBird</h2>
+        <form action="{% url 'signup' %}" method="post" role="form">
+          {% csrf_token %}
+          {% for field in form.visible_fields %}
+            <div class="form-group{% if field.errors %} has-error{% endif %}">
+              <label for="{{ field.label }}">{{ field.label }}</label>
+              {{ field }}
+              {% if field.help_text %}
+                <span class="help-block">{{ field.help_text|safe }}</span>
+              {% endif %}
+              {% for error in field.errors %}
+                <label class="control-label">{{ error }}</label>
+              {% endfor %}
+            </div>
+          {% endfor %}
+            <div class="form-group last">
+              <button type="submit" class="btn btn-danger">Create an account</button>
+            </div>
+        </form>
+      </div>
+        </div>
+    </div>
+
+
+
+{% endblock body %}
